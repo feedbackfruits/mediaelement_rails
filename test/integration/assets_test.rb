@@ -35,7 +35,7 @@ class AssetsTest < ActionDispatch::IntegrationTest
   end
   
   test "includes flash plugin" do
-    get "/assets/mediaelement_rails/flashmediaelement.swf"
+    get "/assets/mediaelement_rails/flashmediaelement-cdn.swf"
     assert_response :success
     assert content_type("application/x-shockwave-flash")
   end
